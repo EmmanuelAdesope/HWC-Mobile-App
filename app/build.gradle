@@ -245,7 +245,7 @@ dependencies {
 //    implementation("com.google.android.fhir:engine:0.1.0-beta03")
 //    implementation("com.google.android.fhir:data-capture:1.0.0")
 }
-configurations.all {
+configurations.configureEach {
     resolutionStrategy {
         force("org.jetbrains.kotlin:kotlin-stdlib:1.8.20")
         force("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.20")
