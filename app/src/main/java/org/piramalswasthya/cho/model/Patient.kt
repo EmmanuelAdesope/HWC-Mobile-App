@@ -80,7 +80,6 @@ import com.google.gson.annotations.Expose
 data class Patient (
 
     @PrimaryKey
-    @NonNull
     var patientID: String = "",
 
     @ColumnInfo(name = "firstName")
@@ -153,7 +152,7 @@ data class Patient (
     var healthIdDetails: BenHealthIdDetails? = null,
 
     @ColumnInfo(name = "lab_technician_flag")
-    val labTechnicianFlag: Int? = 0,
+    var labTechnicianFlag: Int? = 0,
 
     @ColumnInfo(name = "faceEmbedding")
     var faceEmbedding: List<Float>? = null,
